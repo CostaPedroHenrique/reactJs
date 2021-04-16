@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "jest --passWithNoTests",
+    "start": "webpack-dev-server --open",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "yarn test -- --watch",
     "test:staged": "yarn test -- --findRelatedTests",
     "test:ci": "yarn test -- --coverage"
@@ -13,6 +14,7 @@
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "eslint": "^7.24.0",
     "eslint-config-standard-typescript": "^1.0.3",
     "eslint-plugin-import": "^2.22.1",
